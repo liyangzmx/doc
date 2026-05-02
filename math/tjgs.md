@@ -1148,57 +1148,57 @@ F(x) + C
 
 ### 基本积分表
 基本积分表
-```math
+$$
 \int k\,\mathrm{d}x=kx+C \quad (k\text{是常数})
-```
+$$
 
-```math
+$$
 \int x^\mu\,\mathrm{d}x=\frac{x^{\mu+1}}{\mu+1} \quad (\mu\neq -1)
-```
+$$
 
-```math
+$$
 \int \frac{\mathrm{d}x}{x}=\ln|x|+C
-```
+$$
 
-```math
+$$
 \int \frac{\mathrm{d}x}{1+x^2}=\arctan x+C
-```
+$$
 
-```math
+$$
 \int \frac{\mathrm{d}x}{\sqrt{1-x^2}}=\arcsin x+C
-```
+$$
 
-```math
+$$
 \int \cos x\,\mathrm{d}x=\sin x+C
-```
+$$
 
-```math
+$$
 \int \sin x\,\mathrm{d}x=-\cos x+C
-```
+$$
 
-```math
+$$
 \int \frac{\mathrm{d}x}{\cos^2 x}=\tan x+C
-```
+$$
 
-```math
+$$
 \int \frac{\mathrm{d}x}{\sin^2 x}=-\cot x+C
-```
+$$
 
-```math
+$$
 \int \frac{\sin x}{\cos^2 x}\,\mathrm{d}x=\frac{1}{\cos x}+C
-```
+$$
 
-```math
+$$
 \int \frac{\cos x}{\sin^2 x}\,\mathrm{d}x=-\frac{1}{\sin x}+C
-```
+$$
 
-```math
+$$
 \int e^x\,\mathrm{d}x=e^x+C
-```
+$$
 
-```math
+$$
 \int a^x\,\mathrm{d}x=\frac{a^x}{\ln a}+C
-```
+$$
 
 以上十三种基本积分是求解不定积分的基础, **必须熟记**. 
 
