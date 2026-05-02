@@ -1,0 +1,24 @@
+{
+  "id": "conv-1777729970581-bg9buokk4",
+  "providerId": "claude",
+  "title": "Create INDEX.md for document index",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777729970583,
+  "updatedAt": 1777730382848,
+  "lastResponseAt": 1777730382848,
+  "sessionId": "f9a3c1f9-7367-4578-b257-ecbb833759c5",
+  "providerState": {
+    "providerSessionId": "f9a3c1f9-7367-4578-b257-ecbb833759c5"
+  },
+  "currentNote": "README.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 442,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 67456,
+    "contextWindow": 200000,
+    "contextTokens": 67898,
+    "percentage": 34,
+    "contextWindowIsAuthoritative": true
+  }
+}

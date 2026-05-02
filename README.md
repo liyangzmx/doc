@@ -1,3 +1,3 @@
 # doc
 
-[WebAssembly](WebAssembly/WebAssembly.md)
+个人技术笔记文档库，详见 [[INDEX.md|文档索引]]。
