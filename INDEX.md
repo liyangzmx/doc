@@ -71,7 +71,7 @@
 
 ## 网络
 
-- [[net/xdp/xdp_bpf_example.md|XDP / BPF]] — bpf-examples 项目构建与使用
+- [[xdp_bpf_example|XDP / BPF]] — bpf-examples 项目构建与使用
 
 ---
 
