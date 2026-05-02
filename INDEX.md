@@ -4,30 +4,14 @@
 
 ---
 
-## 工作笔记
+## 资源收藏
 
-- [[works.md|工作笔记]] — 历年来各家公司的工作经历与技术实践记录 (ubifs, u-boot, lua, ffmpeg, OCR, SDR, OTA, SecureBoot, OpenGL ES, WebRTC, Op-TEE, DDS, ANTLR…)
-
----
-
-## 编程语言 & 绑定
-
-### Rust
-- [[coding/rust/rust.md|Rust 学习资源]] — 官方教程、Rust圣经、宏小册、嵌入式、FFI 等学习资料汇总
-- [[coding/rust/BuildScript.md|Rust Build Script]] — Cargo build script 的使用：命令执行、bindgen 绑定生成
-
-### Java / JNI
-- [[coding/java/jni.md|JNI / Android NDK]] — Java Native Interface 规范、Android NDK 集成、CMake 配置
-
-### C/C++
-- [[coding/cpp/libs/glfw.md|GLFW + glad]] — 使用 conan + CMake 搭建 OpenGL 开发环境，附三角形渲染示例
-
-### Python 绑定
-- [[binding/pybind11.md|pybind11]] — C++ 与 Python 互操作，conan + CMake 集成示例
+- [[links/ai_urls.md|AI / LLM 工具收藏]] — AI/LLM 相关工具链与开源项目链接汇总 (Ollama, LangChain, llama.cpp, MinerU 等)
+- [[links/csdiy_links.md|CS自学指南 · 必学工具]] — csdiy.wiki 必学工具板块参考资料 (Vim, Git, LaTeX, Docker, Scoop, 实用工具箱等)
 
 ---
 
-## 编译技术 (LLVM / Clang / MLIR)
+## 编译器
 
 ### LLVM 基础
 - [[compile/llvm/llvm.md|LLVM 编译与安装]] — 从源码构建 LLVM 18.x
@@ -64,27 +48,17 @@
 - [[compile/llvm/antlr-Kaleidoscope.md|Kaleidoscope 语法]] — ANTLR4 实现 LLVM Kaleidoscope 语言
 - [[compile/llvm/antlr-TOY.md|TOY 语法]] — ANTLR4 实现 MLIR TOY 语言
 
-### 其他非 Markdown 文件
+### DDS (数据分发服务)
+- [[dds/fastdds.md|Fast-DDS]] — 从源码编译安装 eProsima Fast-DDS
+- [[dds/IDL_DynamicType.md|IDL DynamicType]] — 使用 ANTLR4 Cpp Runtime 实现 DynamicType Visitor
+- [[dds/IDL.g4]] — IDL 的 ANTLR4 语法文件
+
+### 其他
 - [[compile/llvm/launch.json]] — VSCode 调试配置
 
 ---
 
-## 网络
-
-- [[xdp_bpf_example|XDP / BPF]] — bpf-examples 项目构建与使用
-
----
-
-## DDS (数据分发服务)
-
-- [[dds/fastdds.md|Fast-DDS]] — 从源码编译安装 eProsima Fast-DDS
-- [[dds/rustdds.md|RustDDS]] — Rust 实现的 DDS 示例
-- [[dds/IDL_DynamicType.md|IDL DynamicType]] — 使用 ANTLR4 Cpp Runtime 实现 DynamicType Visitor
-- [[dds/IDL.g4]] — IDL 的 ANTLR4 语法文件
-
----
-
-## 安全 & 加密
+## 安全
 
 ### OpenSSL
 - [[security/openssl_android.md|Android 上编译 OpenSSL]] — NDK 交叉编译 OpenSSL
@@ -94,27 +68,11 @@
 ### 密码协议
 - [[security/openssl_spake2_plus.md|SPAKE2+ (C)]] — C 语言实现 CCC3.0 SPAKE2+ 协议
 - [[security/openssl_spake2_plus_rust.md|SPAKE2+ (Rust)]] — Rust 实现 CCC3.0 SPAKE2+ 协议
+- [[security/SPAKE2Plus_OpenSSL.md|SPAKE2+ (OpenSSL 3.0)]] — P-256 椭圆曲线实现 SPAKE2+，含完整协议流程与共享密钥验证
 - [[security/go_custkey.md|Go 自定义签名]] — Go 语言集成自定义签名接口
 
----
-
-## Linux 内核 & 嵌入式
-
-### QEMU 调试
-- [[linux/qemu/debug_kernel_via_qemu.md|QEMU 调试内核]] — 通过 QEMU 调试 Linux 内核/模块
-- [[linux/qemu/riscv-yocto.md|RISC-V Yocto]] — Docker 中搭建 RISC-V Yocto 构建环境
-
-### 内存管理
-- [[linux/swap.md|Linux Swap]] — 创建和管理 swap 文件
-
-### NuttX RTOS
-- [[nuttx/nuttx_stm32f4discovery.md|NuttX on STM32]] — 在 STM32F4 Discovery 上运行 NuttX
-
----
-
-## WebAssembly
-
-- [[WebAssembly/WebAssembly.md|WebAssembly]] — 使用 emscripten/emcc 编译，conan 集成，CMake 配置
+### 协议设计
+- [[security/ECIES_DESIGN_GPT.md|ECIES 设计方案]] — 以 ECDH 为核心的 ECIES-like 混合加密方案，含 KDF + AEAD 工程设计
 
 ---
 
@@ -134,19 +92,19 @@
 
 ---
 
-## 图表 (PlantUML)
+## 其它
 
+- [[works.md|工作笔记]] — 历年来各家公司的工作经历与技术实践记录 (ubifs, u-boot, lua, ffmpeg, OCR, SDR, OTA, SecureBoot, OpenGL ES, WebRTC, Op-TEE, DDS, ANTLR…)
+
+### 图表 (PlantUML)
 - [[plantumls/android_security.puml]] — Android 安全架构图
 - [[plantumls/cpu0_deps.puml]] — Cpu0 后端依赖关系图
 - [[plantumls/llvm-backend.puml]] — LLVM 后端流程图
 - [[plantumls/llvm-llc.puml]] — LLVM LLC 工具流程图
 
----
-
-## 脚本
-
+### 脚本
 - [[scripts/gerrit_query.sh]] — Gerrit 查询脚本
 
 ---
 
-> 最后更新: 2026-05-02
+> 最后更新: 2026-05-03
